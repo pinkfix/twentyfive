@@ -1,0 +1,43 @@
+main {
+    background-color: aqua;
+}
+
+.information {
+    background-color: bisque;
+    grid-area: in;
+}
+
+.map {
+    background-color: cadetblue;
+    grid-area: mp;
+}
+
+.Ad {
+    background-color: darkkhaki;
+    grid-area: ad;
+}
+
+.podium {
+    background-color: fuchsia;
+    grid-area: pd;
+}
+
+
+@media screen and (max-width:900px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr 2fr;
+    }
+}
+
+@media screen and (min-width:901px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'ad mp'
+        'pd mp'
+        'pd in';
+    }
+}
