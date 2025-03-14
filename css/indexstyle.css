@@ -1,43 +1,58 @@
-main {
-    background-color: aqua;
-}
-
-.information {
+#information {
     background-color: bisque;
     grid-area: in;
+    padding:10px;
+    border:5px solid black;
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.map {
+#map {
     background-color: cadetblue;
     grid-area: mp;
+    padding:10px;
+    border:5px solid black;
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.Ad {
+#Ad {
     background-color: darkkhaki;
     grid-area: ad;
+    padding:10px;
+    border:5px solid black;
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.podium {
+#Podium {
     background-color: fuchsia;
     grid-area: pd;
+    padding:10px;
+    border:5px solid black;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:500px) {
     main {
+        background-color: azure;
         display: grid;
         grid-template-rows: 1fr 2fr 1fr 2fr;
+        grid-template-areas: 'in' 'mp' 'ad' 'pd';
     }
 }
 
-@media screen and (min-width:901px) {
+@media screen and (min-width:501px) {
     main {
         display: grid;
+        background-color: aliceblue;
         grid-template-rows: 1fr 2fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        'ad mp'
+        'in mp'
         'pd mp'
-        'pd in';
+        'pd ad';
     }
 }

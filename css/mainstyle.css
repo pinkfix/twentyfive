@@ -2,22 +2,14 @@ body {
     
     display: grid;
     background-color: #663399;
-    grid-template-rows: 50px 200vh 70px;
+    grid-template-rows: 50px 1fr 70px;
     width: 98.7vw;
     border: 0px;
     margin: 0px;
     padding: 0px;
 }
 
-header {
-    background-color: darkmagenta;
-    z-index: 1;
-    position: sticky;
-    display: grid;
-    grid-template-columns: 1fr 1fr;;
-    top: 0;
-    overflow: hidden;
-}
+
 
 footer {
     background-color: hotpink;
@@ -25,20 +17,34 @@ footer {
 
 div.logo {
     background-color: blue;
+    grid-area: logo;
 }
 
 main {
     background-color: khaki;
+    min-height: 80vh;
 }
 
 
 /* Dropdown Button */
+header {
+  display: grid;
+  background-color: darkmagenta;
+  z-index: 1;
+  position: sticky;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'dropdownbtn logo';
+  top: 0;
+  overflow: hidden;
+}
 .dropbtn {
     background-color: #3498DB;
+    grid-area: dropdownbtn;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -48,8 +54,11 @@ main {
 }
 
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
-  position: relative;
+  position: fixed;
+  top: 50px;
+  left: 0px;
   display: inline-block;
 }
 
@@ -57,7 +66,7 @@ main {
 .dropdown-content {
   display: none;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -75,6 +84,8 @@ main {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
 
 .verdana {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
