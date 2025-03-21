@@ -1,7 +1,8 @@
 body {
     
     display: grid;
-    background-color: #663399;
+    row-gap: 20px;
+    background-color: aliceblue;
     grid-template-rows: 50px 1fr 70px;
     width: 98.7vw;
     border: 0px;
@@ -21,7 +22,6 @@ div.logo {
 }
 
 main {
-    background-color: khaki;
     min-height: 80vh;
 }
 
