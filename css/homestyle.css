@@ -51,6 +51,10 @@
         height: 35vh;
         width: 90vw;
     }
+    #map img {
+        height: 1000px;
+        width: 80vw;
+    }
 }
 
 @media screen and (min-width:501px) {
@@ -67,5 +71,9 @@
     #Ad img {
         height: 35vh;
         width: 45vw;
+    }
+    #map img {
+        width: 40vw;
+        height: 70vh;
     }
 }

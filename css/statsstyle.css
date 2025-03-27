@@ -1,0 +1,60 @@
+#Top10today {
+    grid-area: tt;
+    border: 4px double black;
+    border-radius: 10px;
+    padding: 10px;
+}
+#T1 {
+    background-color: gold;
+}
+#T2 {
+    background-color: silver;
+}
+#T3 {
+    background-color: orange;
+}
+
+
+#Top10Jr {
+    grid-area: tj;
+    border: 4px double black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#Top25ofalltime {
+    grid-area: ta;
+    border: 4px double black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width:500px) {
+    main {
+        display: grid;
+        grid-template-rows: 2fr 2fr 5fr;
+        width: 100vw;
+        grid-template-areas:
+            'tt'
+            'tj'
+            'ta'
+        ;
+        padding: 15px;
+        row-gap: 30px;
+    }
+
+}
+
+@media screen and (min-width:501px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'tj ta'
+            'tt ta'
+        ;
+        padding: 15px;
+        gap: 30px;
+    }
+}
