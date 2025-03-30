@@ -1,6 +1,6 @@
 #Top10today {
     grid-area: tt;
-    border: 4px double black;
+    border: 4px double #3a7d44;
     border-radius: 10px;
     padding: 10px;
 }
@@ -17,14 +17,14 @@
 
 #Top10Jr {
     grid-area: tj;
-    border: 4px double black;
+    border: 4px double #3a7d44;
     border-radius: 10px;
     padding: 10px;
 }
 
 #Top25ofalltime {
     grid-area: ta;
-    border: 4px double black;
+    border: 4px double #3a7d44;
     border-radius: 10px;
     padding: 10px;
 }
