@@ -2,56 +2,58 @@
 
 html {
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 footer {
-    background-color: #69b578;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    height: fit-content;
+  grid-area: ft;
+  background-color: #69b578;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 div.logo {
-    grid-area: logo;
+  grid-area: logo;
 }
 
 main {
-    min-height: 80vh;
+  grid-area: mn;
+  min-height: 80vh;
+  width: 100%;
 }
 
 
 /* Dropdown Button */
 header {
+  height: 50px;
+  width: 100%;
+  grid-area: hd;
   display: grid;
   background-color: #69b578;
   z-index: 1;
-  position: sticky;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'dropdownbtn logo';
+  position: fixed;
   top: 0;
-  overflow: hidden;
-}
-.dropbtn {
-    background-color: #3a7d44;
-    grid-area: dropdownbtn;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 200px;
-    cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #244f2b;
+body {
+  display: grid;
+  row-gap: 20px;
+  background-color: aliceblue;
+  grid-template-rows: 50px 1fr 74vh;
+  grid-template-areas: 'hd ' 'mn' 'ft';
+  max-width: 100vw;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
   position: fixed;
+  grid-area: dropdwn;
   top: 50px;
   left: 0px;
   display: inline-block;
@@ -80,36 +82,92 @@ header {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-
-
 .verdana {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media screen and (max-width:500px) {
-  body {
-    
-    display: grid;
-    row-gap: 20px;
-    background-color: aliceblue;
-    grid-template-rows: 50px 1fr 70px;
-    width: 100vw;
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
-}
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'dropdownbtn logo na';
+  }
+
+  .dropbtn {
+    background-color: #3a7d44;
+    grid-area: dropdownbtn;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    max-width: 200px;
+    min-width: 40%;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #244f2b;
+  }
+
+  nav {
+    grid-area: na;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
 }
 
 @media screen and (min-width:501px) {
   body {
-    
-    display: grid;
-    row-gap: 20px;
-    background-color: aliceblue;
-    grid-template-rows: 50px 1fr 70px;
-    width: 100vw;
-    border: 0px;
-    margin: 0px;
+    grid-template-areas: 'hd dropdwn' 'mn' 'ft';
+  }
+
+  header {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 'logo dropdownbtn na';
+  }
+  
+  .dropbtn {
+    grid-area: dropdownbtn;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .dropdown {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    grid-area: dropdwn;
+  }
+
+  nav {
+    grid-area: na;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
     padding: 0px;
-}
+    margin: 0px;
+    justify-content: end;
+  }
+
+  nav div {
+    height: 45px;
+    background-color: #69b578;
+    display: flex;
+    border: 2px solid black;
+    padding: 0px 25px;
+    border-radius: 5px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  nav div:hover {
+    color: #f1f1f1;
+    background-color: #244f2b;
+  }
 }

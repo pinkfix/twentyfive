@@ -63,9 +63,9 @@
         grid-template-rows: 2fr 3fr 3fr 3fr 3fr;
         grid-template-areas: 'if' 'd1' 'd2' 'd3' 'd4';
     }
-    img {
-        width: 90vw;
-        height: 60vh;
+    main img {
+        width: 70vw;
+        height: 45vh;
     }
     #dood1 {flex-direction: column;}
     #dood2 {flex-direction: column;}
@@ -86,6 +86,7 @@
         'if if'
         'd1 d2'
         'd3 d4';
+    
     }
     img.abtus {
         width: 25vw;

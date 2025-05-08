@@ -33,14 +33,13 @@
     main {
         display: grid;
         grid-template-rows: 2fr 2fr 5fr;
-        width: 100vw;
         grid-template-areas:
-            'tt'
-            'tj'
-            'ta'
+        'tt'
+        'tj'
+        'ta'
         ;
         padding: 15px;
-        row-gap: 30px;
+        row-gap: 10px;
     }
 
 }
@@ -55,6 +54,6 @@
             'tt ta'
         ;
         padding: 15px;
-        gap: 30px;
+        gap: 10px;
     }
 }

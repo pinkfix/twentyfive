@@ -17,15 +17,10 @@
 }
 
 #Ad {
-    background-color: #D0DB97;
+    background-color: goldenrod;
     grid-area: ad;
-    padding:10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border:5px solid black;
     margin: 5px;
+    border:5px solid goldenrod;
     border-radius: 5px;
 }
 
@@ -47,13 +42,13 @@
         grid-template-rows: 1fr 2fr 1fr 2fr;
         grid-template-areas: 'in' 'mp' 'ad' 'pd';
     }
-    #Ad img {
+    #Ad {
         height: 35vh;
-        width: 90vw;
+        width: 95vw;
     }
     #map img {
-        height: 1000px;
-        width: 80vw;
+        max-height: 100vh;
+        max-width: 80vw;
     }
 }
 
@@ -68,9 +63,9 @@
         'pd mp'
         'pd ad';
     }
-    #Ad img {
-        height: 35vh;
-        width: 45vw;
+    #Ad {
+        height: 40vh;
+        width: 50vw;
     }
     #map img {
         width: 40vw;
