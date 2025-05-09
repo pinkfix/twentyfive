@@ -1,5 +1,5 @@
 #information {
-    background-color: #D0DB97;
+    background-color: var(--sec);
     grid-area: in;
     padding:10px;
     border:5px solid black;
@@ -8,7 +8,8 @@
 }
 
 #map {
-    background-color: #D0DB97;
+    background-color: var(--sec);
+    color: var(--textonsec);
     grid-area: mp;
     padding:10px;
     border:5px solid black;
@@ -26,7 +27,7 @@
 
 
 #Podium {
-    background-color: #D0DB97;
+    background-color: var(--sec);
     grid-area: pd;
     padding:10px;
     border:5px solid black;

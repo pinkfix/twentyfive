@@ -1,8 +1,8 @@
 #inf {
     grid-area: if;
-    background-color: #D0DB97;
+    background-color: var(--sec);
     margin: 5px;
-    border: 3px solid #3A7D44;
+    border: 3px solid var(--hover);
     padding: 5px;
     border-radius: 5px;
 }
@@ -12,9 +12,9 @@
     justify-content: space-around;
     align-items: center;
     grid-area: d1;
-    background-color: #69B578;
+    background-color: var(--sec);
     margin: 5px;
-    border: 3px solid #3A7D44;
+    border: 3px solid var(--hover);
     padding: 5px;
     border-radius: 5px;
 }
@@ -24,9 +24,9 @@
     justify-content: space-around;
     align-items: center;
     grid-area: d2;
-    background-color: #D0DB97;
+    background-color: var(--main);
     margin: 5px;
-    border: 3px solid #3A7D44;
+    border: 3px solid var(--hover);
     padding: 5px;
     border-radius: 5px;
 }
@@ -36,9 +36,9 @@
     justify-content: space-around;
     align-items: center;
     grid-area: d3;
-    background-color: #D0DB97;
+    background-color: var(--sec);
     margin: 5px;
-    border: 3px solid #3A7D44;
+    border: 3px solid var(--hover);
     padding: 5px;
     border-radius: 5px;
 }
@@ -48,16 +48,15 @@
     justify-content: space-around;
     align-items: center;
     grid-area: d4;
-    background-color: #69B578;
+    background-color: var(--main);
     margin: 5px;
-    border: 3px solid #3A7D44;
+    border: 3px solid var(--hover);
     padding: 5px;
     border-radius: 5px;
 }
 
 @media screen and (max-width:500px) {
     main {
-        background-color: azure;
         display: grid;
         row-gap: 20px;
         grid-template-rows: 2fr 3fr 3fr 3fr 3fr;
@@ -76,8 +75,6 @@
 @media screen and (min-width:501px) {
     main {
         display: grid;
-        width: 100%;
-        background-color: aliceblue;
         row-gap: 20px;
         column-gap: 20px;
         grid-template-rows: 2fr 3fr 3fr;

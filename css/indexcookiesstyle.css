@@ -1,20 +1,81 @@
-section {
-    display: flex;
-    border: 4px double #3a7d44;
-    flex-direction: column;
-    width: 90vw;
-    min-height: 80vh;
-    align-items: center;
-    border-radius: 10px;
-}
-
 main {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+main div {
+    border: 4px double var(--hover);
+    width: 90vw;
+    min-height: 80vh;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'xh xh'
+    'as xa'
+    'as xb'
+    'as xc'
+    'as xd'
+    'as xe'
+    'as xf'
+    'as xg';
 }
 
-#cb {
-    width: 15px;
-    height: 15px;
+section {
+    grid-area: xh;
+    height: 30vh;
+    background-color: var(--main);
+    color: var(--textonmain);
+    padding: 10px;
+}
+
+article:nth-of-type(2n+1) {
+    height: 30vh;
+    background-color: var(--sec);
+    color: var(--textonsec);
+    padding: 10px;
+}
+
+article:nth-of-type(2n) {
+    height: 30vh;
+    background-color: var(--third);
+    color: var(--textonthird);
+    padding: 10px;
+}
+
+article#XA {
+    grid-area: xa;
+}
+
+article#XB {
+    grid-area: xb;
+}
+
+article#XC {
+    grid-area: xc;
+}
+
+article#XD {
+    grid-area: xd;
+}
+
+article#XE {
+    grid-area: xe;
+}
+
+article#XF {
+    grid-area: xf;
+}
+
+article#XG {
+    grid-area: xg;
+}
+
+aside {
+    grid-area: as;
+    background-color: var(--hover);
+    color: var(--textonhover);
+    height: 99%;
+    padding: 10px;
 }
