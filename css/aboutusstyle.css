@@ -64,7 +64,7 @@
         grid-template-areas: 'if' 'd1' 'd2' 'd3' 'd4';
     }
     main img {
-        width: 70vw;
+        margin: 10px;
         height: 45vh;
     }
     #dood1 {flex-direction: column;}

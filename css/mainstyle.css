@@ -1,9 +1,5 @@
 /* Colours: D0DB97 (Vanilla) , 69B578 (Emerald) , 3A7D44 (Fern Green) */
 
-html {
-  overflow-x: hidden;
-  max-width: 100vw;
-}
 
 footer {
   grid-area: ft;
@@ -11,7 +7,6 @@ footer {
   display: flex;
   text-align: center;
   flex-direction: column;
-  width: 100vw;
 }
 
 div.logo {
@@ -21,7 +16,6 @@ div.logo {
 main {
   grid-area: mn;
   min-height: 80vh;
-  width: 100%;
 }
 
 
@@ -43,7 +37,6 @@ body {
   background-color: aliceblue;
   grid-template-rows: 50px 1fr 74vh;
   grid-template-areas: 'hd ' 'mn' 'ft';
-  max-width: 100vw;
   border: 0px;
   margin: 0px;
   padding: 0px;

@@ -44,11 +44,11 @@
     }
     #Ad {
         height: 35vh;
-        width: 95vw;
+        width: 95%;
     }
     #map img {
         max-height: 100vh;
-        max-width: 80vw;
+        max-width: 80%;
     }
 }
 
